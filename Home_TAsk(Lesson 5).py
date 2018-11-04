@@ -1,12 +1,13 @@
 
 
-#Task 5 (вивод імені)
+#Task 1 (вивод імені)
 def hi(name):
 
     if  name:
         print("Hello", name)
-    else:
-         print("Hello, Vlad")
+    elif not name:
+        print("Hello, Vlad")
+
 
 
 
@@ -17,12 +18,13 @@ hi("Alex")
 
 
 
+
 print("-------------------------------------------")
 
 
 
 
-#Task 6(калькулятор)
+#Task 3(калькулятор)
 def  add (a , b):
     return a + b
 def sub (a , b):
@@ -63,7 +65,7 @@ print("-------------------------------------------")
 
 
 
-#Task 7(Додаткове завдання)
+#Task (Додаткове завдання)
 def midlenum(num1,num2,num3):
     return (num1+num2+num3)/3
 i =True
@@ -85,19 +87,26 @@ print("-------------------------------------------")
 
 
 
-#Task 8 (функція)
+#Task 2 (функція)
+
+
 def function(x):
-    return 3 * x + 5
+    if x > 0:
+        return 3 * x + 5
+    elif x <= 0 :
+        return 4 + 5 * x
 
 
 def main():
     for i in range(-10, 11):
-        i /= 2
+        i = i / 2
         y = function(i)
-        print('Функція від (', i, ') =  ', y, sep='')
+        print('Функція від (', i, ') =  ', y, sep='  ')
 
 
 main()
+
+
 
 
 
